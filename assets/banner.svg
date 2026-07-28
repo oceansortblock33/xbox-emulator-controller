@@ -1,0 +1,94 @@
+<svg viewBox="0 0 1200 360" width="1200" height="360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0a0f0a"/>
+      <stop offset="0.55" stop-color="#0d1b0f"/>
+      <stop offset="1" stop-color="#08120a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3ee06b" stop-opacity="0.9"/>
+      <stop offset="0.5" stop-color="#107c10" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#107c10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="modFill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#123a17"/>
+      <stop offset="1" stop-color="#0a1f0c"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3ee06b"/>
+      <stop offset="1" stop-color="#0f7c10"/>
+    </linearGradient>
+    <linearGradient id="textGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#eafff0"/>
+      <stop offset="1" stop-color="#9be8ac"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="360" fill="url(#bg)"/>
+
+  <!-- circuit grid backdrop -->
+  <g stroke="#1f4d24" stroke-width="1" opacity="0.35">
+    <line x1="0" y1="60" x2="1200" y2="60"/>
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="300" x2="1200" y2="300"/>
+    <line x1="150" y1="0" x2="150" y2="360"/>
+    <line x1="900" y1="0" x2="900" y2="360"/>
+    <line x1="1050" y1="0" x2="1050" y2="360"/>
+  </g>
+
+  <!-- circuit traces converging toward glowing core -->
+  <g stroke="#2f8f3a" stroke-width="2" fill="none" opacity="0.55">
+    <path d="M700 340 L780 300 L780 250 L860 200"/>
+    <path d="M950 340 L950 280 L900 230 L900 190"/>
+    <path d="M1180 120 L1080 120 L1040 160 L900 160"/>
+    <path d="M1180 240 L1060 240 L1020 200 L900 200"/>
+    <path d="M1180 40 L1000 40 L960 80 L900 130"/>
+  </g>
+  <g fill="#3ee06b" opacity="0.8">
+    <circle cx="780" cy="300" r="4"/>
+    <circle cx="780" cy="250" r="4"/>
+    <circle cx="900" cy="230" r="4"/>
+    <circle cx="1040" cy="160" r="4"/>
+    <circle cx="1020" cy="200" r="4"/>
+    <circle cx="960" cy="80" r="4"/>
+  </g>
+
+  <!-- glow behind emblem -->
+  <circle cx="965" cy="180" r="170" fill="url(#glow)"/>
+
+  <!-- Xbox-inspired sphere emblem -->
+  <g>
+    <circle cx="965" cy="180" r="92" fill="none" stroke="#1c5a24" stroke-width="3"/>
+    <circle cx="965" cy="180" r="70" fill="none" stroke="#3ee06b" stroke-width="4" opacity="0.85"/>
+    <path d="M905 128 Q965 175 905 232" stroke="#3ee06b" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <path d="M1025 128 Q965 175 1025 232" stroke="#3ee06b" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="965" cy="180" r="14" fill="#eafff0"/>
+  </g>
+
+  <!-- pluggable module blocks bottom right -->
+  <g>
+    <rect x="880" y="272" width="60" height="40" rx="6" fill="url(#modFill)" stroke="url(#edge)" stroke-width="2"/>
+    <rect x="955" y="272" width="60" height="40" rx="6" fill="url(#modFill)" stroke="url(#edge)" stroke-width="2"/>
+    <rect x="1030" y="272" width="60" height="40" rx="6" fill="url(#modFill)" stroke="url(#edge)" stroke-width="2"/>
+    <line x1="940" y1="292" x2="955" y2="292" stroke="#3ee06b" stroke-width="3"/>
+    <line x1="1015" y1="292" x2="1030" y2="292" stroke="#3ee06b" stroke-width="3"/>
+  </g>
+
+  <!-- vertical accent divider -->
+  <line x1="640" y1="50" x2="640" y2="320" stroke="#1c5a24" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- headline -->
+  <text x="60" y="150" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" fill="url(#textGlow)">
+    <tspan x="60" y="150" textLength="560" lengthAdjust="spacingAndGlyphs">Xbox Emulator</tspan>
+    <tspan x="60" y="232" textLength="380" lengthAdjust="spacingAndGlyphs">Windows</tspan>
+  </text>
+
+  <!-- tagline -->
+  <text x="62" y="278" font-family="'Segoe UI', Arial, sans-serif" font-size="22" fill="#bfe8c6" opacity="0.9">
+    <tspan x="62" y="278" textLength="560" lengthAdjust="spacingAndGlyphs">Plug pluggable Xbox hardware emulation</tspan>
+    <tspan x="62" y="306" textLength="480" lengthAdjust="spacingAndGlyphs">modules into the Windows ecosystem seamlessly</tspan>
+  </text>
+
+  <!-- underline accent -->
+  <rect x="62" y="60" width="120" height="6" rx="3" fill="#3ee06b"/>
+</svg>
